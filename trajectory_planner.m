@@ -28,8 +28,10 @@ trajectory_state = zeros(15,max_iter);
 current_waypoint_number = 1;
 
 for iter = 1:max_iter
-    if((iter*time_step)>waypoint_times(current_waypoint_number))
-        current_waypoint_number = min(current_waypoint_number + 1,size(waypoints,2));
+    if (current_waypoint_number<length(waypoint_times))
+        if((iter*time_step)>waypoint_times(current_waypoint_number+1))
+            current_waypoint_number = current_waypoint_number + 1;
+        end
     end
         
     trajectory_state(1:3,iter) = waypoints(1:3,current_waypoint_number);
