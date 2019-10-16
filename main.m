@@ -4,7 +4,7 @@
 
 % Usage: main takes in a question number and executes all necessary code to
 % construct a trajectory, plan a path, simulate a quadrotor, and control
-% the model. Possible arguments: 2, 3, 5, 6.2, 6.3, 6.5, 7, 9, 10. THE
+% the model. Possible arguments: 2, 3, 5, 6.2, 6.3, 6.5, 7, 9. THE
 % TAS WILL BE RUNNING YOUR CODE SO PLEASE KEEP THIS MAIN FUNCTION CALL 
 % STRUCTURE AT A MINIMUM.
 
