@@ -18,29 +18,29 @@ Shubham Garg (ssgarg) and Hannah Lyness (hlyness)
 * state: quadrotor pose 
    * Size: 16x1
    * 1:3: position
-   * 4:6: orientation
-   * 7:9: linear velocity
+   * 4:6: linear velocity
+   * 7:9: orientation
    * 10:12: angular velocity
    * 13:16: motor speeds
 * trajectory_matrix: trajectory discritized by time step
    * Size: 15 x n where n is the number of time steps
    * 1:3: position
-   * 4:6: orientation
-   * 7:9: linear velocity
+   * 4:6: linear velocity
+   * 7:9: orientation
    * 10:12: angular velocity
    * 13:15: linear accelerations
 * actual_state_matrix: actual state discritized by time step
    * Size: 15 x n where n is the number of time steps
    * 1:3: position
-   * 4:6: orientation
-   * 7:9: linear velocity
+   * 4:6: linear velocity
+   * 7:9: orientation
    * 10:12: angular velocity
    * 13:15: linear accelerations
 * actual_desired_state_matrix: desired state discritized by time step (not just the trajectory, this is what the controllers plan for)
    * Size: 15 x n where n is the number of time steps
    * 1:3: position
-   * 4:6: orientation
-   * 7:9: linear velocity
+   * 4:6: linear velocity
+   * 7:9: orientation
    * 10:12: angular velocity
    * 13:15: linear accelerations
 * current_state: current struct, used to make feeding current state into control functions easier
